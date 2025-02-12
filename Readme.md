@@ -156,10 +156,10 @@ Feel free to fork this repository and contribute by submitting pull requests. I 
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
 
 Thank you for visiting my repository, and I hope you enjoy exploring these C projects!
-This is your requested README.md with the exact data you provided, formatted and ready for use.
 
 
 # Future Projects
