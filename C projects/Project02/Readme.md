@@ -13,7 +13,6 @@ The program includes:
 
 ---
 
-
 ### **Sample Code**
 ```c
 #include <stdio.h>
