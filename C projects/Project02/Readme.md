@@ -13,7 +13,6 @@ The program includes:
 
 ---
 
-<br><br><br>
 
 ### **Sample Code**
 ```c
@@ -114,7 +113,7 @@ void decryption() {
 #include <stdlib.h>
 ```
 * stdio.h – For input/output functions.<br>
-* stdlib.h – Includes system("clear") for console clearing.<br><br><br><br>
+* stdlib.h – Includes system("clear") for console clearing.
 
 
 ### **Function Declarations**  
@@ -125,7 +124,7 @@ void space(int num);
 ```
 * encryption() – Encrypts a given word.
 * decryption() – Decrypts an encrypted word.
-* space(int num) – Prints blank lines for better formatting.<br><br><br>
+* space(int num) – Prints blank lines for better formatting.
 
 
 ### **Printing Blank Spaces (Formatting Function)**  
@@ -138,7 +137,7 @@ void space(int num){
 ```
 
 ✅ This function prints num blank lines.<br>
-✅ Helps format the output by pushing content down.<br><br><br>
+✅ Helps format the output by pushing content down.
 
 
 ### **3. Main Function (Program Execution Starts Here)**  
@@ -169,7 +168,7 @@ getchar(); // Consume newline left in buffer
 
 * ✅ Prints a menu for the user.
 * ✅ Reads input (1 for encryption, 2 for decryption).
-* ✅ Uses getchar() to remove extra newline from scanf().<br><br><br>
+* ✅ Uses getchar() to remove extra newline from scanf().
 
 ### **Switch Case for User Selection**
 ```c
@@ -189,7 +188,7 @@ switch (opt) {
 
 * ✅ Clears the console (system("clear")) before running the selected function.
 * ✅ Calls encryption() or decryption() based on the user’s choice.
-* ✅ Displays an error message for invalid input.<br><br><br>
+* ✅ Displays an error message for invalid input.
 
 
 ### **4. Encryption Function**
@@ -203,7 +202,7 @@ void encryption() {
     fgets(word, sizeof(word), stdin);
 ```
 * Declares word[500] to store user input.
-* Uses fgets() to safely take input.<br><br><br>
+* Uses fgets() to safely take input.
 
 ### **Encrypting the Word**
 ```c
@@ -214,14 +213,14 @@ for (int i = 0; word[i] != '\0'; i++) {
 ```
 * ✅ Loops through each character.
 * ✅ Encrypts by shifting each character forward by 5 (word[i] + 5).
-* ✅ Avoids modifying \n (newline character).<br><br><br>
+* ✅ Avoids modifying \n (newline character).
 
 ### **Displaying Encrypted Code**
 ```c
 printf("\nEncrypted Code: %s\n", word);
 printf("\n____________________________________________________________\n\n");
 ```
-* ✅ Prints the encrypted word.<br><br><br>
+* ✅ Prints the encrypted word.
 
 ### **5. Decryption Function**
 ```c
@@ -233,7 +232,7 @@ void decryption() {
     printf("\nEnter the encrypted code for decryption: ");
     fgets(word, sizeof(word), stdin);
 ```
-* ✅ Similar to encryption(), but asks for encrypted input.<br><br><br>
+* ✅ Similar to encryption(), but asks for encrypted input.
 
 ### **Decrypting the Code**
 ```c
@@ -244,14 +243,14 @@ for (int i = 0; word[i] != '\0'; i++) {
 ```
 
 * ✅ Loops through each character.
-* ✅ Decrypts by shifting each character backward by 5 (word[i] - 5).<br><br>
+* ✅ Decrypts by shifting each character backward by 5 (word[i] - 5).
 
 ### **Displaying Decrypted Word**
 ```c
 printf("\nDecrypted Word: %s\n", word);
 printf("\n____________________________________________________________\n\n");
 ```
-* ✅ Prints the original word after decryption.<br><br><br><br>
+* ✅ Prints the original word after decryption.
 <hr>
 <hr>
 
@@ -261,7 +260,7 @@ printf("\n____________________________________________________________\n\n");
 * ✅ Works for Any String – Encrypts full sentences too.
 * ✅ Proper Console Formatting – Uses space(40), system("clear").
 * ✅ Safe Input Handling – Uses fgets() instead of gets().
-<br><br>
+
 
 <h3>7. Possible Improvements</h3>
 
@@ -285,7 +284,7 @@ printf("\n____________________________________________________________\n\n");
 #endif
 ```
 
-<br><br><br>
+
 <h3>8. Final Thoughts</h3>
 
 ```
